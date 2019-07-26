@@ -1,0 +1,26 @@
+1,Định nghĩa
+Cách khai báo:
+  **  let [tên biến] = [giá trị]
+Quy tắc -Không được bắt đầu bằng số
+        -Chỉ được chứa [a-z][A-Z],số và _,$
+        -Không được chứa dấu Cách
+        -Không được trùng với từ khóa của ngôn ngữ
+Đặc điếm:
+        -Phân biệt hoa thường
+Gợi ý về cách đặt:
+    Ex: tips
+        yearOfBirth
+Giá trị:
+    -Chuỗi: "" ''
+    -số: 5, 5.6
+
+  **  const [tên biến] = [giá trị]
+    //const: Hằng số không đổi
+  **  var [tên biến] = [giá trị]        
+    //var: khai báo biến, có thể thay đổi
+*Dấu = :có hướng từ trái sang
+Phép toán: + - * / %
+            % :chia lấy dư
+            / :chia lấy thương
+
+Hoisting : kéo lên

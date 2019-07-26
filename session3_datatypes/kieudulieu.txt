@@ -1,0 +1,27 @@
+DATATYPES
+-Number
+    +integer: số nguyên
+    +float: số thực
+-Chuỗi string
+    +"" or '' or ``
+-Undifined
+-Object
+-Array
+
+"Gia tri cua z la: " + z
+`Gia tri cua x la ${x}`
+
+-Number: + - * / %
+         ++ --
+        
+        log(x++) ->x tăng 1 đơn vị sau khi thực hiện hành động in
+        log(++x) ->x tăng 1 đơn vị trước khi thực hiện hành động in
+    
+Bài tập: 
+1, Hỏi người dùng năm sinh?->In ra tuổi
+2, Hỏi tên người dùng?Hỏi năm sinh người dùng?
+->In ra: Chao ban [tên], ban [tuổi] tuoi.
+3,Hỏi tên và tuoi người dùng (cách nhau bởi dấu ,)
+->In ra: Ten ban la [tên], ban [tuổi] tuoi.
+4,Hỏi tên và năm sinh người dùng (cách nhau bởi dấu ,)
+->In ra: Ten ban la [tên], ban [tuổi] tuoi.

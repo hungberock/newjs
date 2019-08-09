@@ -1,0 +1,29 @@
+1,Vấn đề
+Đa giác n cạnh.Tính chu vi
+In ra độ dài các cạnh
+2,Cú pháp
+let<tên biến> = [giá trị1,...]
+3,Sử dụng:
+    Độ dài của mảng:
+        (tên biến).length: độ dài mảng
+    Truy cập từng giá trị:
+        (tên biến)[index] :giá trị tại chỉ số index (ĐẾN TỪ 0)
+    Thêm giá trị:
+        (tên biến).push(giá trị1, giá trị 2,...) =>Thêm giá trị vào cuối mảng
+        (tên biến).unshift(giá trị) =>Thêm giá trị vào đầu mảng
+        (tên biến)[index] = giá trị 
+    Xóa giá trị:pop,shift
+
+Menu:
+1,Danh sách trong thư viện
+2,Tên sách
+3,Đổi tên sách
+4,Xóa
+5,Thoát
+1:In ra danh sách các sách theo từng dòng,có số thứ tự->in ra menu
+2:Nhập tên sách:thêm vào thư viện->in ra menu
+3:Nhập stt cuốn sách muốn đổi tên:Nhập tên mới,đổi tên sách->in ra menu
+4:Nhập stt sách cần xóa:Xóa
+5:Thoảt khỏi chương trình
+Số khác->Báo sai,nhập lại
+

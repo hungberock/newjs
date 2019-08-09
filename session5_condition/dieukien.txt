@@ -1,0 +1,35 @@
+Câu lệnh điều kiện
+1,Điều kiện (condition)
+Kết quả: Đúng-sai <=> True-false
+Các cú pháp về điều kiện: Toán tử so sánh: == != > < >= <=
+                                            ===  !==
+                            Toán tử logic: && (và)  
+                                            || (hoặc)
+                                            ! (phủ định)
+Ví dụ:Chuyển các phép toán đại số sang lập trình js
+
+2,Cú pháp
+        if(condition){
+            
+        }
+
+        if(dk){
+
+        }
+        else if(dk){
+
+        }
+        ...
+bt: 
+ax + b = 0
+ax^2 + bx + c = 0
+in ra nghiệm
+
+switch(biến){
+        case giá trị1:
+        break;
+        case giá trị2
+        break;
+
+        default:   //default <=>else
+}

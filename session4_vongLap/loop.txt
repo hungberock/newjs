@@ -1,0 +1,32 @@
+Vòng lặp
+
+for
+1,Vấn đề
+2,Cú pháp
+1,Tính tổng từ 1 đến N,với N nhập bởi người dùng
+2,hỏi người dùng số cạnh đa giác
+hỏi người dùng độ dài mỗi cạnh
+->in ra chu vi đa giác
+3,Nhập N.Tính tổng 1/1 +1/2 +...+1/N
+4,Nhập N.Tính tổng 1/(1*2) + 1/(2*3) +...+1/N*(N+1)
+
+a = a + 5 <=> a += 5
+a = a - 5 <=> a -= 5
+
+while
+1,yêu cầu nhập vào mật khẩu
+-Kiểm tra: độ dài mk <8 thì yêu cầu nhập lại, 
+-ko chứa kí tự đặc biệt ($,&,_)
+-Nếu mk > 8 thì in ra mk
+2,Yêu cầu nhập 2 số a, b
+in ra hình chữ nhật 
+******
+****** b
+******
+ a
+
+*
+**    
+***
+****
+ a

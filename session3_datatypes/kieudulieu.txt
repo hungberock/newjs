@@ -25,3 +25,8 @@ Bài tập:
 ->In ra: Ten ban la [tên], ban [tuổi] tuoi.
 4,Hỏi tên và năm sinh người dùng (cách nhau bởi dấu ,)
 ->In ra: Ten ban la [tên], ban [tuổi] tuoi.
+5,Yêu cầu người dùng nhập vào bán kính hình tròn
+->In ra: chu vi hình tròn có bán kính [] là []
+        Diện tích hình tròn có bán kính [] là []
+6,Yêu cầu người dùng nhập vào chiều dài,chiều rộng của hình chữ nhật
+->Hình chữ nhật có chiều dài [], chiều rộng [], có chu vi và diện tích là [],[]

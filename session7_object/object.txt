@@ -1,0 +1,31 @@
+1,Vấn đề:
+    let person = []
+Object:
+    let person = {
+        key1 : value1;
+        key2: value2;
+    }
+
+QUY TẮC: 
+-key phải là suy nhất, nếu trùng thì nhận giá trị khai báo sau
+-value: lưu trữ bất kì kiểu dữ liệu nào js có (số,chuỗi,mảng,object, function,...)
+Cách khai báo:
+    key: nằm trong dấu "" hoặc '' hoặc không có nháy
+
+2,Cách sử dụng:
+Mảng: danhsach[index] => Lấy value tại index
+Object: 
+        person["key"]  =>Lấy value tại key
+        person.key
+
+    object["key"] có kiểu dữ liệu khi khai báo hoặc khi bị thay đổi
+
+Tạo thêm key-value:
+    object["key moi"] = value
+    object.keymoi = value
+
+Xóa key-value:
+    delete object["key"]
+    delete object.key
+
+3,Bài tập

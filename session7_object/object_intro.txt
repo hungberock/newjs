@@ -1,0 +1,122 @@
+// let person = {
+//     "name": "Pham Van A", 
+//     age: 19,
+//     "country": "HaNoi",
+//     //name: "Nguyen Thi B"
+// }
+
+// console.log(person);
+// console.dir(person);
+// console.log(person["age"]);
+// console.log(person.country);
+
+// console.log(person["name"]);
+// person["name"] = "Nguyen Thi B"; // Update
+// console.log(person.name);
+
+// person.age = person.age + 1;
+
+// person["school"]  = "Dai hoc quoc gia"; // Create
+
+// for (const key in person) {
+//     if (person.hasOwnProperty(key)) {
+//         const element = person[key];
+//         console.log(element);
+//     }
+// }
+
+// let arr = [10,2,3];
+
+// for (const key in arr) {
+//     console.log("FOR IN:",key);
+// }
+
+// for (const value of arr) {
+//     console.log("FOR OF: ",value);
+// }
+
+// console.log(typeof(arr));
+// console.log(typeof(person));
+// let x = 5;
+// let name = "abc";
+// console.log(typeof(x));
+// console.log(typeof(name));
+// //console.log(arr instanceof Array);
+// console.log(arr.constructor.toString());
+// console.log(arr.constructor.toString().indexOf('Array') >= 0);
+
+// ======================= Bài tập trên lớp ========================= //
+
+// Khởi tạo biến sinh viễn rỗng
+let sinhVien = {};
+
+let name = prompt("Nhập tên:");
+let age = Number(prompt("Nhập tuổi: "));
+let country = prompt("Nhập quê quán: ");
+//Tạo key-value mới cho sinhVien
+sinhVien["name"] = name;
+sinhVien['age'] = age;
+sinhVien.country = country;
+
+console.log(sinhVien);
+
+// Các môn học có chung ý nghĩa, tạo 1 array lưu 3 môn học
+let dachSachMonHoc = [];
+for (let index = 0; index < 3; index++) {
+    let monHoc = prompt("Nhập môn học:");
+    dachSachMonHoc.push(monHoc);
+}
+//, sau đó tạo 1 key lưu array đó
+sinhVien.subjects = dachSachMonHoc;
+
+// Cách khác, có thể để người dùng nhập cả chuỗi cách nhau bởi dấu ,
+// sau đó cắt chuỗi bởi split để đc 1 array mới
+// let inputDSMonHoc = prompt("Nhập danh sách môn học, ngăn cách nhau bởi dấu ,");
+// sinhVien.subjects = inputDSMonHoc.split(',');
+
+// Hiện danh sách key để người dùng chọn update
+let danhSachKeys = '';
+for (const key in sinhVien) {
+    if (sinhVien.hasOwnProperty(key)) {
+        danhSachKeys += key + '\n';
+    }
+}
+console.log(danhSachKeys);
+
+let inputKey = prompt("Nhập thông tin muốn thay đổi: ");
+
+// Có thể cho người dùng nhập nhiều lần cho đến khi đúng thì thôi
+// while(!sinhVien.hasOwnProperty(inputKey)){
+//     inputKey = prompt("Nhập lại thông tin muốn thay đổi: ");
+// }
+
+// Kiểm tra key đúng k, nếu đúng thì sửa, k thì báo sai
+if(sinhVien.hasOwnProperty(inputKey)){
+    if(inputKey == 'age'){
+        sinhVien[inputKey] = Number(prompt("Nhập nội dung: "));
+    }else{
+        sinhVien[inputKey] = prompt("Nhập nội dung: ");
+    }
+}
+else{
+    alert("Nhập sai thông tin");
+}
+
+// Lớp học gồm các thông tin mang ý nghĩa khác nhau, ta tạo 1 object lop
+let lop = {
+    'maSo': prompt("Nhập mã số lớp"),
+    'tenLop': prompt("Nhập tên lớp:")
+}
+sinhVien.classInfo = lop;
+console.log(sinhVien);
+
+// Thêm 2 môn mới cho danh sách môn học, vì key đã tạo ở trên nên
+// dưới đây ta chỉ việc push vào key đó
+for (let index = 0; index < 2; index++) {
+    let monHoc = prompt("Nhập tên môn học:");
+    sinhVien.subjects.push(monHoc);
+}
+
+// Xóa key của object (2 cách code)
+delete sinhVien['classInfo'];
+delete sinhVien.subjects;

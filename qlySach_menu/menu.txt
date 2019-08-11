@@ -1,0 +1,23 @@
+Menu:
+1,Danh sách trong thư viện
+2,Thêm sách,cùng tên tăng số lượng
+3,Đổi tên sách
+4,Xóa
+5,Mượn sách: Tên,số lượng mượn(số lượng lớn hơn???)
+6,Thống kê số lượng sách,giá trị của từng loại,tổng giá trị
+7,Sắp xếp theo số lượng,theo giá trị,theo tổng giá trị
+8,Thoát
+1:In ra danh sách các sách theo từng dòng,có số thứ tự->in ra menu
+2:Nhập tên sách:thêm vào thư viện->in ra menu
+3:Nhập stt cuốn sách muốn đổi tên:Nhập tên mới,đổi tên sách->in ra menu
+4:Nhập stt sách cần xóa:Xóa
+8:Thoảt khỏi chương trình
+Số khác->Báo sai,nhập lại
+
+Quản lý: 
+    Sách:     
+        +Tên
+        +Giá bán
+        +Số lượng
+    Thêm cùng tên: tăng số lượng
+    Mượn sách: số lượng giảm

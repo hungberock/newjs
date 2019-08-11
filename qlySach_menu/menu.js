@@ -1,5 +1,4 @@
-let bookInfo = {};
-let danhSach = [];
+
 
 let menu = "Menu: \n"+
             "1. Danh sách sách trong thư viện\n" +
@@ -9,6 +8,34 @@ let menu = "Menu: \n"+
             "8. Thoát";
 
 let message = menu + "\nChọn menu: "
+
+let bookInfo = {};
+let danhSach = [];
+function addBook() {
+   
+    let addName = prompt("Nhập tên sách: ");
+    let addPrice = Number(prompt(`Nhập giá sách: `));
+    let addAmount = Number(prompt(`Nhập số lượng: `));
+    bookInfo.name = addName;
+    bookInfo.price = addPrice;
+    bookInfo.amount = addAmount;
+    console.log(bookInfo);
+    
+    danhSach.push(bookInfo);
+    
+    
+}
+
+function reBook() {
+    let number_re = Number(prompt(`Nhập STT sách cần đổi tên: `));
+    if (0 >= number_re || number_re > danhSach.length) {
+        alert(`Số thứ tự không hợp lệ`);
+    }
+    else {
+    let name_re = prompt(`Nhập tên mới: `)
+    danhSach[number_re-1].name = name_re;
+    }
+}
 
 function inDS() {
     
@@ -26,30 +53,6 @@ function inDS() {
     alert(ds);
 }
 
-
-function addBook() {
-    
-    let addName = prompt("Nhập tên sách: ");
-    let addPrice = Number(prompt(`Nhập giá sách: `));
-    let addAmount = Number(prompt(`Nhập số lượng: `));
-    bookInfo.name = addName;
-    bookInfo.price = addPrice;
-    bookInfo.amount = addAmount;
-    danhSach.push(bookInfo);
-    
-    
-}
-
-function reBook() {
-    let number_re = Number(prompt(`Nhập STT sách cần đổi tên: `));
-    if (0 >= number_re || number_re > danhSach.length) {
-        alert(`Số thứ tự không hợp lệ`);
-    }
-    else {
-    let name_re = prompt(`Nhập tên mới: `)
-    danhSach[number_re-1].name = name_re;
-    }
-}
 
 function delBook() {
     let number_del = Number(prompt(`Nhập STT sách cần xóa: `));
